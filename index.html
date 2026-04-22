@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kanza Lbasri — Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ─── HEADER ─── -->
+  <header>
+    <div class="logo"><span>~/</span>kanza_lbasri</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ─── HOME ─── -->
+  <section id="home">
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+         <!--<div class="hero-profile">
+        <img src="image-portfolio.jpeg" alt="Kanza Lbasri">
+        </div> -->
+      <div class="hero-tag">Cybersecurity Student</div>
+      <h1 class="hero-name">
+        Kanza<br><span class="accent">Lbasri</span>
+      </h1>
+      <p class="hero-title">
+        <span class="typing" id="typed"></span>
+      </p>
+      <p class="hero-desc">
+        Passionate about web security, networking, and ethical hacking.
+        Currently learning to identify and exploit vulnerabilities in web
+        applications to better understand how to secure them.
+      </p>
+      <div class="hero-links">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        <a href="https://github.com/KANZALBASRI" target="_blank" class="btn btn-ghost">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- Terminal Widget -->
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <div class="t-dot r"></div>
+        <div class="t-dot y"></div>
+        <div class="t-dot g"></div>
+        <span class="terminal-title">kanza@kali ~ $</span>
+      </div>
+      <div class="terminal-body">
+        <div><span class="t-prompt">$ </span><span class="t-cmd">whoami</span></div>
+        <div class="t-out">→ <span class="t-highlight">kanza_lbasri</span></div>
+        <div style="margin-top:0.5rem"><span class="t-prompt">$ </span><span class="t-cmd">cat skills.txt</span></div>
+        <div class="t-out">→ SQL Injection, XSS, CSRF</div>
+        <div class="t-out">→ Python scripting, SQL testing</div>
+        <div class="t-out">→ Bash, Linux, Recon tools</div>
+        <div style="margin-top:0.5rem"><span class="t-prompt">$ </span><span class="t-cmd">nmap -sV 192.168.1.0/24</span></div>
+        <div class="t-out">Starting Nmap 7.94 ...</div>
+        <div class="t-out">Host: 192.168.1.1 — <span class="t-highlight">UP</span></div>
+        <div class="t-out">Open ports: <span class="t-red">22, 80, 443</span></div>
+        <div style="margin-top:0.5rem"><span class="t-prompt">$ </span><span class="t-cmd">status</span></div>
+        <div class="t-out">→ <span class="t-highlight">Open to opportunities ✓</span></div>
+        <div><span class="t-prompt">$ </span><span class="t-cmd">_</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="section-wrap">
+      <div class="section-label">01 — About</div>
+      <h2 class="section-title">Who I <span class="accent">Am</span></h2>
+
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>
+            I'm a cybersecurity student with a strong interest in web application security
+            and network fundamentals. My focus is on understanding how attackers think
+            so I can build better defenses.
+          </p>
+          <p>
+            I have hands-on experience working with Linux environments and understand
+            common web vulnerabilities such as SQL Injection, XSS, and CSRF — from
+            both an offensive and defensive perspective.
+          </p>
+          <p>
+            I enjoy learning by practicing in lab environments and building small projects
+            that simulate real-world attacks and defenses. I regularly participate in CTF
+            challenges to sharpen my skills.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-box">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">CTF</span>
+            <span class="stat-label">Challenges</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tools Mastered</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity Level</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-icon">💻</span>
+          <div class="skill-card-title">Web Development</div>
+          <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python (automation, scripting)</li>
+            <li>SQL (queries, injection testing)</li>
+            <li>Linux / Kali</li>
+            <li>Bash scripting</li>
+            <li>Command-line tools</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:0.1s">
+          <span class="skill-icon">🛡️</span>
+          <div class="skill-card-title">Cybersecurity</div>
+          <ul class="skill-list">
+            <li>SQL Injection</li>
+            <li>XSS</li>
+            <li>CSRF</li>
+            <li>Brute Force</li>
+            <li>Recon</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal" style="transition-delay:0.2s">
+          <span class="skill-icon">🔧</span>
+          <div class="skill-card-title">Tools & Systems</div>
+          <ul class="skill-list">
+            <li>Linux / Kali</li>
+            <li>Ubuntu</li>
+            <li>VirtualBox</li>
+            <li>Git & GitHub</li>
+            <li>Nmap</li>
+            <li>iptables</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      <div class="skill-card reveal">
+              <span class="skill-icon">⚡</span>
+  <div class="skill-card-title">What I Do</div>
+    <ul class="skill-list">
+    <li>Automate tasks with Python</li>
+     <li>Test web apps for SQL Injection</li>
+     <li>Use Bash for system navigation</li>
+    </ul>
+    </div>
+
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-title">What I've <span class="accent">Built</span></h2>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-num">01 / NETWORK</div>
+          <h3 class="project-name">Network Scanner</h3>
+          <p class="project-desc">
+            A Python-based tool for discovering hosts and open ports on a local network.
+            Automates host discovery, port scanning, and service detection across subnets.
+          </p>
+          <div>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Nmap</span>
+            <span class="project-tag">Networking</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <div class="project-num">02 / CTF</div>
+          <h3 class="project-name">CTF Writeups</h3>
+          <p class="project-desc">
+            Documented solutions to Capture The Flag challenges covering web exploitation,
+            cryptography, and digital forensics — with detailed methodology breakdowns.
+          </p>
+          <div>
+            <span class="project-tag">Web Security</span>
+            <span class="project-tag">Crypto</span>
+            <span class="project-tag">Forensics</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-num">03 / DEFENSE</div>
+          <h3 class="project-name">Firewall Config Lab</h3>
+          <p class="project-desc">
+            Hands-on lab for configuring iptables rules and testing packet filtering policies.
+            Simulates real-world firewall scenarios in an isolated virtual environment.
+          </p>
+          <div>
+            <span class="project-tag">iptables</span>
+            <span class="project-tag">Linux</span>
+            <span class="project-tag">VirtualBox</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="section-label">04 — Contact</div>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+
+      <div class="contact-inner">
+        <div>
+          <p class="contact-desc">
+            I'm actively looking for internship opportunities, collaborative projects,
+            and connections in the cybersecurity field. Don't hesitate to reach out —
+            let's build something secure together.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:kanzalbasri07@gmail.com" class="contact-link">
+              <span class="link-icon">✉</span>
+              kanzalbasri07@gmail.com
+            </a>
+            <a href="https://github.com/KANZALBASRI" target="_blank" class="contact-link">
+              <span class="link-icon">⌥</span>
+              github.com/KANZALBASRI
+            </a>
+            <a href="https://www.linkedin.com/in/kanza-lbasri-137550337" target="_blank" class="contact-link">
+              <span class="link-icon">in</span>
+              linkedin.com/in/kanza-lbasri
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="What would you like to say?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start">
+            Send Message →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <div class="footer-copy">
+      © 2026 <span>Kanza Lbasri</span> — Cybersecurity Portfolio
+    </div>
+    <div class="footer-copy" style="color:#2a4a2a;">
+      Built with HTML & CSS · <span>Secured by design</span>
+    </div>
+  </footer>
+
+  <!-- ─── SCRIPTS ─── -->
+  <script>
+    /* Cursor */
+    const cursor = document.getElementById('cursor');
+    const ring   = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    function animCursor() {
+      cursor.style.left = mx + 'px';
+      cursor.style.top  = my + 'px';
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animCursor);
+    }
+    animCursor();
+    document.querySelectorAll('a,button,.skill-list li,.project-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.width = '56px'; ring.style.height = '56px'; ring.style.opacity = '0.8';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.width = '36px'; ring.style.height = '36px'; ring.style.opacity = '0.5';
+      });
+    });
+
+    /* Typing effect */
+    const phrases = [
+      'Web Security Researcher',
+      'Ethical Hacker in Training',
+      'CTF Player',
+      'Network Enthusiast',
+    ];
+    let pi = 0, ci = 0, del = false;
+    const typed = document.getElementById('typed');
+    function type() {
+      const phrase = phrases[pi];
+      if (!del) {
+        typed.textContent = phrase.slice(0, ++ci);
+        if (ci === phrase.length) { del = true; setTimeout(type, 1800); return; }
+      } else {
+        typed.textContent = phrase.slice(0, --ci);
+        if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; }
+      }
+      setTimeout(type, del ? 40 : 80);
+    }
+    type();
+
+    /* Scroll reveal */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    /* Active nav link */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + cur
+          ? 'var(--green)' : '';
+      });
+    });
+  </script>
+</body>
+</html>
