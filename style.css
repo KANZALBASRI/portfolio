@@ -90,17 +90,18 @@ header {
   z-index: 100;
 }
 .bar-track {
-height: 6px;
-background: var(--border);
-margin-top: 10px;
+  height: 6px;
+  background: var(--border);
+  margin-top: 10px;
 }
 
 .bar-fill {
-height: 100%;
-width: 0;
-background: var(--green);
-transition: width 1s ease;
+  height: 100%;
+  width: 0;
+  background: var(--green);
+  transition: width 1s ease;
 }
+
 .logo {
   font-family: var(--mono);
   font-size: 1rem;
@@ -129,6 +130,56 @@ nav a::after {
 }
 nav a:hover { color: var(--green); }
 nav a:hover::after { width: 100%; }
+
+/* FIX #6: Hamburger button styles */
+#hamburger {
+  display: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--green);
+  position: fixed;
+  top: 1.1rem;
+  right: 1.5rem;
+  z-index: 200;
+  font-family: var(--mono);
+  background: rgba(6,10,15,0.9);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.6rem;
+  line-height: 1;
+  transition: border-color 0.2s, color 0.2s;
+}
+#hamburger:hover {
+  border-color: var(--green);
+  color: var(--white);
+}
+
+/* FIX #6: Mobile nav overlay */
+#navLinks {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(6,10,15,0.97);
+  z-index: 150;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#navLinks.open {
+  display: flex;
+}
+#navLinks a {
+  font-family: var(--mono);
+  font-size: 1.2rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+#navLinks a:hover {
+  color: var(--green);
+}
 
 /* ─── HERO ─── */
 #home {
@@ -221,6 +272,7 @@ nav a:hover::after { width: 100%; }
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .btn-primary {
   background: var(--green);
@@ -555,17 +607,7 @@ nav a:hover::after { width: 100%; }
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/*.hero-profile img {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--green);
-  box-shadow: 
-    0 0 10px var(--green),
-    0 0 30px var(--green-glow),
-    0 0 60px var(--green-glow);
-}*/
+
 .form-group input,
 .form-group textarea {
   background: var(--surface);
@@ -614,6 +656,9 @@ footer {
 /* ─── Responsive ─── */
 @media(max-width: 900px) {
   header { padding: 1rem 1.5rem; }
+  /* FIX #6: show hamburger on mobile, hide desktop nav */
+  #hamburger { display: block; }
+  nav { display: none; }
   .hero-terminal { display: none; }
   #home { padding: 0 1.5rem; min-height: 90vh; padding-top: 5rem; }
   .section-wrap { padding: 4rem 1.5rem; }
