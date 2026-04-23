@@ -89,7 +89,18 @@ header {
   border-bottom: 1px solid var(--border);
   z-index: 100;
 }
+.bar-track {
+height: 6px;
+background: var(--border);
+margin-top: 10px;
+}
 
+.bar-fill {
+height: 100%;
+width: 0;
+background: var(--green);
+transition: width 1s ease;
+}
 .logo {
   font-family: var(--mono);
   font-size: 1rem;
