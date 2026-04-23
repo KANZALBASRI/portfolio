@@ -126,65 +126,66 @@
   </section>
 
   <!-- ─── SKILLS ─── -->
-  <section id="skills">
-    <div class="section-wrap">
-      <div class="section-label">02 — Skills</div>
-      <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
-
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <span class="skill-icon">💻</span>
-          <div class="skill-card-title">Web Development</div>
-          <ul class="skill-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python (automation, scripting)</li>
-            <li>SQL (queries, injection testing)</li>
-            <li>Linux / Kali</li>
-            <li>Bash scripting</li>
-            <li>Command-line tools</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal" style="transition-delay:0.1s">
-          <span class="skill-icon">🛡️</span>
-          <div class="skill-card-title">Cybersecurity</div>
-          <ul class="skill-list">
-            <li>SQL Injection</li>
-            <li>XSS</li>
-            <li>CSRF</li>
-            <li>Brute Force</li>
-            <li>Recon</li>
-          </ul>
-        </div>
-
-        <div class="skill-card reveal" style="transition-delay:0.2s">
-          <span class="skill-icon">🔧</span>
-          <div class="skill-card-title">Tools & Systems</div>
-          <ul class="skill-list">
-            <li>Linux / Kali</li>
-            <li>Ubuntu</li>
-            <li>VirtualBox</li>
-            <li>Git & GitHub</li>
-            <li>Nmap</li>
-            <li>iptables</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
+    
+    <div class="skills-grid">
+      
       <div class="skill-card reveal">
-              <span class="skill-icon">⚡</span>
-  <div class="skill-card-title">What I Do</div>
-    <ul class="skill-list">
-    <li>Automate tasks with Python</li>
-     <li>Test web apps for SQL Injection</li>
-     <li>Use Bash for system navigation</li>
-    </ul>
-    </div>
+        <span class="skill-icon">💻</span>
+        <div class="skill-card-title">Web Development</div>
+        <ul class="skill-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python (automation, scripting)</li>
+          <li>SQL (queries, injection testing)</li>
+          <li>Linux / Kali</li>
+          <li>Bash scripting</li>
+          <li>Command-line tools</li>
+        </ul>
+      </div>
 
-  </section>
+      <div class="skill-card reveal" style="transition-delay:0.1s">
+        <span class="skill-icon">🛡️</span>
+        <div class="skill-card-title">Cybersecurity</div>
+        <ul class="skill-list">
+          <li>SQL Injection</li>
+          <li>XSS</li>
+          <li>CSRF</li>
+          <li>Brute Force</li>
+          <li>Recon</li>
+        </ul>
+      </div>
 
+      <div class="skill-card reveal" style="transition-delay:0.2s">
+        <span class="skill-icon">🔧</span>
+        <div class="skill-card-title">Tools & Systems</div>
+        <ul class="skill-list">
+          <li>Linux / Kali</li>
+          <li>Ubuntu</li>
+          <li>VirtualBox</li>
+          <li>Git & GitHub</li>
+          <li>Nmap</li>
+          <li>iptables</li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <span class="skill-icon">⚡</span>
+        <div class="skill-card-title">What I Do</div>
+        <ul class="skill-list">
+          <li>Automate tasks with Python</li>
+          <li>Test web apps for SQL Injection</li>
+          <li>Use Bash for system navigation</li>
+        </ul>
+      </div>
+
+    </div> <!-- skills-grid -->
+  </div> <!-- section-wrap -->
+</section>
   <!-- ─── PROJECTS ─── -->
   <section id="projects">
     <div class="section-wrap">
@@ -267,7 +268,7 @@
           </div>
         </div>
 
-        <form class="contact-form" onsubmit="return false;">
+        <form id="contactForm" class="contact-form">
           <div class="form-group">
             <label>Name</label>
             <input type="text" placeholder="Your name" />
