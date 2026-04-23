@@ -1,7 +1,7 @@
 // ── DOM references ───────────────────────────────
 const hamburger  = document.getElementById('hamburger');
-const navLinks   = document.getElementById('navLinks');   // FIX: was used but never declared
-const navbar     = document.getElementById('navbar');
+const navLinksMenu = document.getElementById('navLinks');
+const navLinksAll = document.querySelectorAll('nav a');
 const contactForm = document.getElementById('contactForm'); // FIX: element now exists in HTML
  
 // ── Hamburger toggle ─────────────────────────────
