@@ -34,10 +34,10 @@ const Contact = () => {
             Drop a Line
           </h3>
           <p className="text-lg text-text-light font-mono mb-2">
-            Email: <span className="text-neon-blue">kenza.lbasri@example.com</span>
+            Email: <span className="text-neon-blue">kanzalbasri07@gmail.com</span>
           </p>
           <p className="text-lg text-text-light font-mono">
-            GitHub: <span className="text-neon-blue">github.com/kenzalbasri</span>
+            GitHub: <span className="text-neon-blue">github.com/kanzalbasri</span>
           </p>
         </div>
       </div>
