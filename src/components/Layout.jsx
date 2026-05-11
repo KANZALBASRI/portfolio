@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Navbar from './Navbar';
-import Footer from './Footer'; // Assuming you might want a footer later
+//import Footer from './Footer'; // Assuming you might want a footer later
 
 const Layout = ({ children }) => {
   return (
